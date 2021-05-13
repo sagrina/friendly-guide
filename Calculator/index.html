@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>計算機</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <div class="container mt-5 p-4">
+        <div class="row border border-dark border-3 justify-content-center p-2 mx-auto" style="max-width: 90%; width: 300vh; max-height: 300vh; height: 80vh">
+            <div class="row mb-0 align-items-center">
+                <div>
+                    <input type="text" name="showScreen" id="showScreen" class="form-control text-end fs-1 p-2 bg-white" value="0" placeholder="0" readonly>
+                    <lable id="symbol" for="showScreen" class="fs-3"></lable>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center mb-2">
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3"  onclick="numberClick(7)">7</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(8)">8</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(9)">9</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-secondary btn-large fs-3" onclick="calClick('&divide;')">&divide;</button> </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-2">
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(4)">4</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(5)">5</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(6)">6</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-secondary btn-large fs-3" onclick="calClick('&times;')">&times;</button> </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-2">
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(1)">1</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(2)">2</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="numberClick(3)">3</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-secondary btn-large fs-3" onclick="calClick('&minus;')">&minus;</button> </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center mb-2">
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-danger btn-large fs-3" onclick="clears()">AC</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-primary btn-large fs-3" onclick="0">0</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-success btn-large fs-3" onclick="equals()">&equals;</button> </div>
+                <div class="col d-grid h-75 mh-100"> <button class="btn btn-secondary btn-large fs-3" onclick="calClick('&plus;')">&plus;</button> </div>
+            </div>
+        </div>
+    </div>
+<script src="C:\Users\sagrina\Desktop\Calculator/calc.js"></script>
+
+
+</body>
+
+</html>
